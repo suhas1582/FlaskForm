@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thank you</title>
+</head>
+<body>
+    <h1>Your Articles</h1>
+    {% for article in articles %}
+        <h1>{{article['name']}}</h1>
+        <br>
+        <p>{{article['content']}}</p>
+        <br><br>
+    {% endfor %}
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<form method="POST">
+    {{ form.hidden_tag() }}
+    {{ form.author.label }} {{ form.author }}
+    <br>
+    {{ form.title.label }} {{ form.title }}
+    <br>
+    {{ form.content.label }} {{ form.content }}
+    <br>
+    {{form.submit}}
+</form>
+</body>
+</html>
